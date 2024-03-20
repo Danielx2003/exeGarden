@@ -19,7 +19,7 @@ export default function LoginComp(props) {
 
     useEffect(() => {
         const makeReq = async () => {
-            const response = await fetch(`http://${IP}:8000/authentication/login/`, {
+            const response = await fetch(`br408.pythonanywhere.com/authentication/login/`, {
                 method: "POST",
                 headers: {
                   "Content-type": "application/json",
