@@ -18,7 +18,7 @@ export default function Nav() {
     useEffect(() => {
         const getUsername = async () => {
             const response = await axios.get(
-                `br408.pythonanywhere.com/authentication/user/`,
+                `http://${IP}/authentication/user/`,
                 {'withCredentials': true}
             )
             .then((res) => res.data)

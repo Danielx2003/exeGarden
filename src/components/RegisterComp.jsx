@@ -17,7 +17,7 @@ export default function RegisterComp(props) {
         e.preventDefault()
         const makeReq = async () => {
             // POST username and password
-            const response = await fetch(`br408.pythonanywhere.com/authentication/register/`, {
+            const response = await fetch(`http://${IP}:8000/authentication/register/`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
@@ -44,7 +44,7 @@ export default function RegisterComp(props) {
             }
         }
         const loginReq = async () => {
-            const response = await fetch(`br408.pythonanywhere.com/authentication/login/`, {
+            const response = await fetch(`http://${IP}:8000/authentication/login/`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",
