@@ -33,51 +33,51 @@ function App() {
       <Nav/>
         <Routes>
           <Route
-            path="/"
+            path="/exeGarden/"
             element={<Splash />}
           />
           <Route
-            path="/main"
+            path="/exeGarden/main"
             element={<Main />}
           />
           <Route
-            path="/login"
+            path="/exeGarden/login"
             element={<Login redirectQR={redirectQR} />}
           />
           <Route
-            path="/logout"
+            path="/exeGarden/logout"
             element={<Logout/>}
           />
           <Route
-            path="/forgot"
+            path="/exeGarden/forgot"
             element={<Forgot />}
           />
           <Route
-            path="/leaderboard"
+            path="/exeGarden/leaderboard"
             element={<Leaderboard />}
           />
           <Route
-              path="/admin"
+              path="/exeGarden/admin"
               element={< Admin />}
           />
           <Route
-            path="/admin/create"
+            path="/exeGarden/admin/create"
             element={< QRCreate />}
           />
           <Route 
-            path="/qr"
+            path="/exeGarden/qr"
             element={<Congrats setRedirectQR={setRedirectQR}/>}
           />
           <Route
-            path="friends"
+            path="/exeGarden/friends"
             element={<Friends/>}
           />
           <Route
-            path="pending-friend-requests"
+            path="/exeGarden/pending-friend-requests"
             element={<FriendRequests/>} FriendSearch
           />
           <Route
-            path="friend-search"
+            path="/exeGarden/friend-search"
             element={<FriendSearch/>}
           />
         </Routes>

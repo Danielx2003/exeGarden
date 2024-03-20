@@ -47,7 +47,7 @@ export default function Nav() {
         <nav className="navbar navbar-fixed-top">
             <div className="nav-container">
                 <div className="nav-group">
-                    <a className="navbar-text-logo" href="/">Garden App</a>
+                    <a className="navbar-text-logo" href="/exeGarden/">Garden App</a>
                 </div>
                 {
                     // Wait until name has been loaded before rendering this
@@ -55,7 +55,7 @@ export default function Nav() {
                     // If user is not logged in
                     <>
                         <div className="nav-group">
-                            <a className="nav-group-element" href="/login">Login</a>
+                            <a className="nav-group-element" href="/exeGarden/login">Login</a>
                         </div>
                     </>
                     :
@@ -65,15 +65,15 @@ export default function Nav() {
                             {
                                 (group.includes('admin') || group.includes('game_master')) ?
                                 <>
-                                    <a className="nav-group-element" href="/admin">Admin</a>
+                                    <a className="nav-group-element" href="/exeGarden/admin">Admin</a>
                                 </>
                                 :
                                 <>
                                 
                                 </>
                             }
-                            <a className="nav-group-element" href="/friends" style={{fontWeight : location.pathname == "/friends" ? "bold" : "normal"}} >Friends</a>
-                            <a className="nav-group-element" href="/leaderboard" style={{fontWeight : location.pathname == "/leaderboard" ? "bold" : "normal"}}>Leaderboard</a>
+                            <a className="nav-group-element" href="/exeGarden/friends" style={{fontWeight : location.pathname == "/friends" ? "bold" : "normal"}} >Friends</a>
+                            <a className="nav-group-element" href="/exeGarden/leaderboard" style={{fontWeight : location.pathname == "/leaderboard" ? "bold" : "normal"}}>Leaderboard</a>
                             <Logout/>
                         </div>
                     </>
